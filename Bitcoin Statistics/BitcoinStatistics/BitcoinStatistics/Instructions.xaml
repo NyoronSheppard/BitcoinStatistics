@@ -1,0 +1,64 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="BitcoinStatistics.Instructions"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--All content, Main Layout-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel Page name-->
+        <Grid Background="Black">
+
+            <TextBlock Text="Instructions" Foreground="White" Margin="0,26,0,13" FontSize="42" Width="370" Height="58" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold" />
+            <Image Source="/Assets/Tiles/Iconic/tileapplication.png" RenderTransformOrigin="0.518,0.511" HorizontalAlignment="Left" Margin="10,10,0,0" Width="80" Height="79" Tap="onClickMainImage" />
+        </Grid>
+
+        <!--ContentPanel. Aditional Content-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,38,12,0">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="325*"/>
+                    <RowDefinition Height="77*"/>
+                    <RowDefinition Height="196*"/>
+                    <RowDefinition Height="35*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" TextWrapping="Wrap" Text="Current Statistics View" Margin="0,0,0,175" FontWeight="Bold"/>
+                <TextBlock Grid.Row="0" TextWrapping="Wrap" Margin="10,38,0,0">
+                	<Run Text="Contains the information of "/>
+                	<Run Text="most important"/>
+                	<Run Text=" Bitcoin selling webs."/>
+                </TextBlock>
+                <TextBlock Grid.Row="0" TextWrapping="Wrap" Text="- Value and after refresh will show the % change" Margin="30,95,0,128"/>
+                <TextBlock Grid.Row="0" TextWrapping="Wrap" Text="- Click on the Currency (by default USD) to change" Margin="30,130,0,91"/>
+                <TextBlock Grid.Row="0" TextWrapping="Wrap" Text="- For more information about the Bitcoin type click the list item.(country, currency and date of update)" Margin="30,183,0,9"/>
+                <TextBlock Grid.Row="0" TextWrapping="Wrap" Text="- Click the refresh button below the view to update values" Margin="31,267,-1,0"/>
+
+                <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Currency View" Margin="0,10,0,17" FontWeight="Bold"/>
+                <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Click on a currency to change" Margin="11,47,-1,186" Grid.RowSpan="2"/>
+
+                <TextBlock Grid.Row="2" TextWrapping="Wrap" Text="Details View" Margin="1,15,-1,151" FontWeight="Bold"/>
+                <TextBlock Grid.Row="2" TextWrapping="Wrap" Text="Shows information of the Bitcoin selling web." Margin="11,50,-1,113"/>
+                <TextBlock Grid.Row="2" TextWrapping="Wrap" Text="- Click on Star Button to create an icon" Margin="31,83,-1,78"/>
+
+            </Grid>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

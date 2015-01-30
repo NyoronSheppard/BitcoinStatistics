@@ -1,0 +1,15 @@
+﻿<vm:MainViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:BitcoinStatistics.ViewModels"
+    SampleProperty="Valor de propiedad Sample Text">
+
+    <vm:MainViewModel.Items>
+        <vm:ItemViewModel ID="0" NameApi="Name" LastValue="Last" LowValue="Low" HighValue="High" CountryApi="Country" CurrencyApi="USD" LastUpdate="Update" Difference="Diff"/>
+        <vm:ItemViewModel ID="1" NameApi="Name" LastValue="Last" LowValue="Low" HighValue="High" CountryApi="Country" CurrencyApi="USD" LastUpdate="Update" Difference="Diff"/>
+        <vm:ItemViewModel ID="2" NameApi="Name" LastValue="Last" LowValue="Low" HighValue="High" CountryApi="Country" CurrencyApi="USD" LastUpdate="Update" Difference="Diff"/>
+        <vm:ItemViewModel ID="3" NameApi="Name" LastValue="Last" LowValue="Low" HighValue="High" CountryApi="Country" CurrencyApi="USD" LastUpdate="Update" Difference="Diff"/>
+        
+    </vm:MainViewModel.Items>
+
+</vm:MainViewModel>
